@@ -15,8 +15,8 @@
 	</head>
 	<style>
 		@charset "UTF-8";
-		@import url(http://fonts.googleapis.com/css?family=Roboto);
-		@import url(http://fonts.googleapis.com/css?family=Sanchez);
+		@import url(https://fonts.googleapis.com/css?family=Roboto);
+		@import url(https://fonts.googleapis.com/css?family=Sanchez);
 		@import url(http://weloveiconfonts.com/api/?family=entypo);
 		/* entypo */
 		[class*="entypo-"]:before {
@@ -55,7 +55,7 @@
 			background-image: radial-gradient(  #DF8157, #D96E73);
 			opacity: .5;
 		}
-		
+
 		.need-gitches {
 			width: 100%;
 			height: 100%;
@@ -63,7 +63,7 @@
 			position: relative;
 			z-index: 1;
 		}
-		
+
 		.need-gitches .call-them {
 			width: 100%;
 			height: 100%;
@@ -84,7 +84,7 @@
 			font-size: 38px;
 			font-family: "Sanchez", courier, serif;
 		}
-		
+
 		.need-gitches .call-them h2:last-child{
 			margin-top: 170px;
 		}
@@ -94,7 +94,7 @@
 			display: block;
 			font-size: 68px;
 		}
-		
+
 		.need-gitches .call-them .btn.call-to-action {
 			width: 90%;
 			height: 62px;
@@ -163,17 +163,17 @@
 			</div>
 
 			<div data-js="output" class="result"></div>
-			<textarea data-js="output" class="result"></textarea>  
-		</div> 
+			<textarea data-js="output" class="result"></textarea>
+		</div>
 
 
 
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 		<!-- jQuery -->
-		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/github.js"></script>
 		<script>
 			github({
@@ -181,10 +181,10 @@
 				profile_type: "",
 				name: "bullgit",
 				data_type: "members",
-				useLoader: false 
+				useLoader: false
 			});
 
-			$(document).ready(function(){ 
+			$(document).ready(function(){
 
 				function extract(){
 					var hom = $('.result .repo');
@@ -212,11 +212,11 @@
 
 						$this.empty().html(newval);
 
-					}); 
+					});
 
 
 
-				} 
+				}
 
 				function setTweet(){
 					var bx = $('.result');
@@ -227,10 +227,10 @@
 				}
 
 				setTimeout(function(){
-					extract(); 
+					extract();
 
 					setTimeout(function(){
-						isolate(); 
+						isolate();
 						setTweet();
 					}, 10);
 
